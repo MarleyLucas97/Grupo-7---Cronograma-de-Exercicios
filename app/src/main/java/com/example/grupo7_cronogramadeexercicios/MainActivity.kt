@@ -1,10 +1,13 @@
 package com.example.grupo7_cronogramadeexercicios
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.grupo7_cronogramadeexercicios.login.Login
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +18,11 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val btnLogin: ImageButton = findViewById(R.id.btn_login)
+        btnLogin.setOnClickListener() {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
         }
     }
 }
