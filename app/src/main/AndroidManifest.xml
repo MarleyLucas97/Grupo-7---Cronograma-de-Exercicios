@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".login.Login" />
+        <activity android:name="Treino_A"/>
+        <activity android:name="Treino_B"/>
+        <activity android:name="Treino_C"/>
     </application>
 
 </manifest>

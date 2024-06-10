@@ -38,42 +38,67 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="5dp" />
 
-        <FrameLayout
-            android:id="@+id/grafico"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_gravity="center|top"
-            android:background="#4CAF50"
-            android:padding="9dp" >
-
-        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="289dp"
+            app:srcCompat="@drawable/main" />
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="50dp" />
+            android:layout_height="15dp" />
 
         <ImageButton
             android:id="@+id/btn_peito"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:backgroundTint="#830000"
-            app:srcCompat="@drawable/peito" />
+            app:srcCompat="@drawable/pt_btn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Peito" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <ImageButton
             android:id="@+id/btn_costas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:backgroundTint="#830000"
-            app:srcCompat="@drawable/costas" />
+            app:srcCompat="@drawable/ct_btn" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Costas" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <ImageButton
             android:id="@+id/btn_perna"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:backgroundTint="#830000"
-            app:srcCompat="@drawable/pernas" />
+            app:srcCompat="@drawable/pn_btn" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pernas" />
 
     </LinearLayout>
 
